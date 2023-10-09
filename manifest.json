@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Pomodoro Chrome Extension",
+    "version": "1.0.1",
+    "description": "Pomodoro time & To do list chrome extension",
+    "permissions": [
+        "activeTab",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+      ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "./timer-logo.png",
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+    },
+    "icons": {
+        "16": "./timer-logo.png",
+        "32": "./timer-logo.png",
+        "48": "./timer-logo.png",
+        "128": "./timer-logo.png"
+    },
+    "permissions": [
+		"storage"
+	]
+}
